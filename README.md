@@ -1,3 +1,19 @@
+Note from GNARBOX:
+
+This fork of the upstream [twitchtv/twirp](https://github.com/twitchtv/twirp) repo contains experimental/work-in-progress implementations of streaming twirps — current activity is on the [v6_streaming_alpha](https://github.com/twitchtv/twirp/compare/v6_streams_alpha...gnarbox:v6_streams_alpha) branch.
+
+Current status:
+
+* Streaming responses are working in protobuf, failing in JSON
+* Streaming requests and bi-directional streaming are not implemented
+
+Upstream issues:
+
+* [(#70) Proposal: Go streaming API](https://github.com/twitchtv/twirp/issues/70)
+* [(#3) Proposal: Support streaming in the Twirp spec](https://github.com/twitchtv/twirp/issues/3)
+
+---
+
 ![Twirp Logo](./logo.png) [![Build Status](https://travis-ci.org/twitchtv/twirp.svg?branch=master)](https://travis-ci.org/twitchtv/twirp) [![Go Report Card](https://goreportcard.com/badge/github.com/twitchtv/twirp)](https://goreportcard.com/report/github.com/twitchtv/twirp) [![GoDoc](https://godoc.org/github.com/twitchtv/twirp?status.svg)](https://godoc.org/github.com/twitchtv/twirp)
 
 ---
