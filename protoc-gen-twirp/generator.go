@@ -1114,8 +1114,8 @@ func (t *twirp) generateClient(name string, file *descriptor.FileDescriptorProto
 					t.P(`			return`)
 					t.P(`		}`)
 				}
-				t.P(`		out := new(`, outputType, `)`)
 				t.P(`		for {`)
+				t.P(`			out := new(`, outputType, `)`)
 				t.P(`			if err = reader.Read(out); err != nil {`)
 				t.P(`				if err == `, t.pkgs["io"], `.EOF {`)
 				t.P(`					return`)
